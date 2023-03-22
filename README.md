@@ -13,8 +13,8 @@
 ```sudo vim ~/.bashrc```
 
 ### 在文件末尾添加别名：
-alias cman='man -M /usr/share/man/zh_CN'    # 中文手册（繁体同理）
-alias eman='man -M /usr/share/man'          # 英文手册
+```alias cman='man -M /usr/share/man/zh_CN'  ```  # 中文手册（繁体同理）
+```alias eman='man -M /usr/share/man'   ```       # 英文手册
 ### 更新 ~/.bashrc 使之生效：
 
 ```source ~/.bashrc```
