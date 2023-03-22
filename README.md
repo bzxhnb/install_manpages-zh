@@ -1,23 +1,23 @@
 
-##个人安装方法
-###1. 安装 man 中文软件包
-``sudo apt install manpages-zh
+### 个人安装方法
+### 1. 安装 man 中文软件包
+```sudo apt install manpages-zh
 
-###2. 查询 man 中文手册安装目录
-``dpkg -L manpages-zh | less ``
+### 2. 查询 man 中文手册安装目录
+```dpkg -L manpages-zh | less ``
 发现 man 中文手册安装目录为 /usr/share/man/zh_CN（简体）或 /usr/share/man/zh_TW （繁体）。
 
 
-###3. 设置中英文 man 别名
+### 3. 设置中英文 man 别名
 编辑 ~/.bashrc文件：
-``sudo vim ~/.bashrc``
+```sudo vim ~/.bashrc``
 
-###在文件末尾添加别名：
+### 在文件末尾添加别名：
 alias cman='man -M /usr/share/man/zh_CN'    # 中文手册（繁体同理）
 alias eman='man -M /usr/share/man'          # 英文手册
-###更新 ~/.bashrc 使之生效：
+### 更新 ~/.bashrc 使之生效：
 
-``source ~/.bashrc``
+```source ~/.bashrc``
 
 # 中文 man 手册页计划
 "manpages-zh"
